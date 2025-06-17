@@ -69,23 +69,16 @@ a {
     font-weight: 800;
     line-height: 1.4;
     margin-bottom: 20px;
-    /* Gradient background */
-    background: linear-gradient(to right, rgb(64, 62, 62), rgb(105, 105, 105), rgb(206, 204, 204), rgba(148, 121, 207, 0.497),  rgb(109, 60, 182)); 
-    /* Required for text gradient */
-    -webkit-background-clip: text; 
-    background-clip: text;
+    -webkit-text-fill-color: #eae5e5c6;
+    background-color: black; /* Black background behind the text */
+    display: inline-block; /* Keeps background tight around text */
 
-        /*Make actual text transparent so gradient shows */
-
+    /* Gradient text styling */
+    background: linear-gradient(to right, rgb(64, 62, 62), rgb(211, 193, 243), rgb(74, 61, 81), rgb(220, 219, 221));
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: transparent;
-    
-    /* Ensure it renders on mobile */
-    display: inline-block;
-    transform: translateZ(0); /* Optional forces hardware acceleration */
-
   }
-  
+
   .hero p {
     font-size: 1.1rem;
     color: #aaa;
