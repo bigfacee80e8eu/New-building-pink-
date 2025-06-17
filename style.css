@@ -69,10 +69,21 @@ a {
     font-weight: 800;
     line-height: 1.4;
     margin-bottom: 20px;
-    background: linear-gradient(to right, rgb(64, 62, 62), rgb(105, 105, 105), rgb(121, 120, 120), rgb(215, 212, 212),  rgb(174, 136, 161));
-    -webkit-background-clip: text; /* For other browsers (partially upport) */
+    /* Gradient background */
+    background: linear-gradient(to right, rgb(64, 62, 62), rgb(105, 105, 105), rgb(206, 204, 204), rgba(148, 121, 207, 0.497),  rgb(109, 60, 182)); 
+    /* Required for text gradient */
+    -webkit-background-clip: text; 
+    background-clip: text;
+
+        /*Make actual text transparent so gradient shows */
+
     -webkit-text-fill-color: transparent;
-    color: transparent; /* Fallback */
+    color: transparent;
+    
+    /* Ensure it renders on mobile */
+    display: inline-block;
+    transform: translateZ(0); /* Optional forces hardware acceleration */
+
   }
   
   .hero p {
@@ -125,7 +136,7 @@ a {
     margin-bottom: 10px; /*creates space before Selection starts */
     text-align: center;
     opacity: 88%;
-    color: #7e7777;
+    color: #eae5e5;
     margin: auto;
     max-width: 750px;
   }
